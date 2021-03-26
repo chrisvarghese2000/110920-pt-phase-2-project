@@ -52,19 +52,19 @@ EXTR_RPSale.csv
 There are three main data tables and one look up data table. Extra_RPSale.csv is the lengthiest data set as it contains transactions for any property that has occured in King County. Following this is EXTR_Parcel.csv. This data set give various facts about any parcel of land and fact pertaining to this such as topographical features. The third data set is EXTR_ResBldg.csv. This data set contains many fields of interest since it pertains to facts of residential properties such as room, bath count, and square footage.
 
 The first part of my analysis that I would like to point to, is the base of my linear regression model. I started out by examining the various correlations between many parameters of interest and sale price. This can be easily seen in the heatmap I created.
-['heatmap hopefully'](refrences/figures/heatmap.png)
+['heatmap hopefully'](references/figures/heatmap.png)
 (figure 1)
 
 While this heatmap easily highlights correlations, it is notable that the correlation coefficients are quite low on both the positive and negative spectrum. Because of this, it was a great challenge to even try and create a linear model that attempted to statisfy various assumptions, soley because the relationships in the data were seemingly weak to begin with.
 
 I used the relationship between total sq ft of living space and sale price to begin my model.
-['graph of living space and price'](refrences/figures/livingsp-price.png)
+['graph of living space and price'](references/figures/livingsp-price.png)
 (figure 2)
 
 This data is somewhat trending in a weakly positive, but linear relation. Even though there is a trend, there is the presence of outliers and the data is too spread out to really point out a clear direction. Adding to this model, I utilized the total square ft of porch space and the total square ft of garage space to the sale price. Although these had weaker correlations, I added them to the model since they had decent correlations and they would help me answer my targeted questions.
 
 I wanted to address the significance of heating system and its affect on price, so this is a chart of the various distributions of several heating systems and the corrosponding sale price of its home.
-['force air map'](refrences/figures/forced_air.png)
+['force air map'](references/figures/forced_air.png)
 (figure 3)
 
 This chart shows that there is not a huge amount of variation in pricing between different heating systems.
